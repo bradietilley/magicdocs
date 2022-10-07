@@ -1,0 +1,33 @@
+{
+    "name": "bradietilley/magicdocs",
+    "description": "A tool for creating docblocks for your PHP classes that use magic like Laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MagicDocs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bradie Tilley",
+            "homepage": "https://github.com/bradietilley"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "pestphp/pest": "^1.22"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MagicDocs\\Laravel\\MagicDocsServiceProvider"
+            ]
+        }
+    }
+}
